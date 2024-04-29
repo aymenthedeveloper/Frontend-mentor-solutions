@@ -1,0 +1,36 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: clamp(2rem, 2vw + 1rem, 3.5rem);
+}
+.project-list{
+  padding: 0;
+  display: grid;
+  row-gap: 10px
+}
+.project-list li{
+  list-style-type: none;
+  margin-inline: auto;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+  width: 9em;
+}
+.project-list li a{
+  text-decoration: none;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  
+}
+.project-list li a::after{
+  content: "";
+  width: 1em;
+  height: em;
+  background-image: url(./images/arrow.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
