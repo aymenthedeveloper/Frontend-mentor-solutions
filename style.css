@@ -27,7 +27,7 @@ h1{
 .project-list li a::after{
   content: "";
   width: 1em;
-  height: em;
+  height: 1em;
   background-image: url(./images/arrow.svg);
   display: inline-block;
   background-repeat: no-repeat;
